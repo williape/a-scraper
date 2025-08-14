@@ -63,7 +63,7 @@ node scrape-all-postcodes.js resume 3500
 npm run scrape-all
 ```
 
-### 4. Output Format
+### Output Format
 ```json
 {
     "totalCount": 210,
@@ -94,11 +94,19 @@ npm run scrape-all
 
 ## Timing and Performance
 
-- **Page Load**: 3-5 seconds for Vue.js initialization
-- **Form Interactions**: 1-2 seconds between actions
-- **Load More Cycles**: 3-4 seconds between clicks
-- **Total Time**: 5-15 minutes depending on data volume
-- **Expected Results**: 200+ members for Melbourne 3000
+  # Start with testing (recommended)
+  npm run scrape-sample           # 40 postcodes, 2-4 hours
+  npm run scrape-cities           # 8 major cities, 1-2 hours
+
+  # State-specific scraping  
+  node scrape-all-postcodes.js state VIC    # Victoria only, 3-8 hours
+
+  # Resume interrupted scrapes
+  node scrape-all-postcodes.js resume 3500  # Continue from postcode 3500
+
+  # Full Australia (production)
+  npm run scrape-all              # All 9000+ postcodes, 25-50 hours
+
 
 ## Troubleshooting
 
