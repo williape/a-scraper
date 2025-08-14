@@ -1,0 +1,22 @@
+{
+  "name": "ca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "scrape": "node scraper.js",
+    "test-headed": "node test-headed.js",
+    "scrape-headed": "node headed-scraper.js",
+    "scrape-sample": "node scrape-all-postcodes.js sample",
+    "scrape-cities": "node scrape-all-postcodes.js cities",
+    "scrape-all": "node scrape-all-postcodes.js full",
+    "scrape-stats": "node scrape-all-postcodes.js stats"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}
